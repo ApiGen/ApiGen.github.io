@@ -1,0 +1,239 @@
+@font-face {
+	font-family: 'Paola';
+	src: url('paola.eot');
+	src: url('paola.eot?#iefix') format('embedded-opentype'), url('paola.woff') format('woff'), url('paola.ttf') format('truetype'), url('paola.svg#paolaRegular') format('svg');
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin: 0 auto;
+	padding: 40px 10px 16px;
+	max-width: 780px;
+	min-width: 360px;
+}
+
+body#pear {
+	padding-top: 0;
+}
+
+h1, h2 {
+	text-align: center;
+}
+
+h1 {
+	font: normal 220% 'Paola', sans-serif;
+	margin: 30px auto 20px;
+	color: #333333;
+}
+
+h2 {
+	margin: 10px 0;
+	font-size: 150%;
+}
+
+h3 {
+	margin: 10px;
+	font-size: 130%;
+}
+
+p, ul, pre, table {
+	margin: 16px 10px;
+}
+
+p, ul {
+	padding: 0;
+	text-align: justify;
+}
+
+li {
+	padding-left: 22px;
+	list-style: none;
+	background: transparent url('item.png') 0 6px no-repeat;
+}
+
+pre, code {
+	font-family: monaco, consolas, monospace;
+}
+
+pre {
+	padding: 3px 3px 3px 20px;
+}
+
+code {
+	font-size: 13px;
+}
+
+form {
+	margin: 0 10px;
+}
+
+table th {
+	width: 16ex;
+}
+
+a.btn {
+	float: right;
+	margin: 5px 0 5px 20px;
+	background-color: #008bec;
+	background-image: -moz-linear-gradient(top, #008bec, #262275);
+	background-image: -webkit-linear-gradient(top, #008bec, #262275);
+	background-image: -o-linear-gradient(top, #008bec, #262275);
+	background-image: -ms-linear-gradient(top, #008bec, #262275);
+	background-image: linear-gradient(top, #008bec, #262275);
+	background-repeat: repeat-x;
+	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+	color: #ffffff;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+	text-decoration: none;
+}
+
+a.btn:hover, a.btn:active {
+	background-color: #262275;
+	color: #ffffff;
+}
+
+small {
+	font-size: 13px;
+}
+
+img {
+	border: none;
+}
+
+input[type=image] {
+	border: none;
+}
+
+#logo {
+	display: block;
+	margin: 0 auto 5px auto;
+	width: 274px;
+	height: 70px;
+	background: url('logo.png') transparent center center no-repeat;
+}
+
+#logo span {
+	position: absolute;
+	top: -1000px;
+}
+
+#php {
+	position: relative;
+	top: 17px;
+	display: inline-block;
+	width: 97px;
+	height: 50px;
+	background: url('php.png') transparent center center no-repeat;
+}
+
+#php span {
+	position: absolute;
+	top: -1000px;
+}
+
+nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1000;
+	height: 40px;
+	background-color: #333333;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, .25);
+	text-align: center;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+}
+
+nav ul li {
+	display: block;
+	float: left;
+	padding: 0;
+	list-style: none;
+	color: #808080;
+	background: none;
+}
+
+nav ul li a, nav ul li a:visited {
+	display: block;
+	line-height: 19px;
+	padding: 10px 7px 11px;
+	text-decoration: none;
+	font-size: 13px;
+	color: #bfbfbf;
+	text-shadow: 0 -1px 1px rgba(0, 0, 0, .25);
+}
+
+nav ul li a:hover {
+	background-color: rgba(255, 255, 255, .05);
+	color: #ffffff;
+}
+
+nav ul li.active a, nav ul li.active a:hover {
+	background-color: rgba(0, 0, 0, .5);
+	color: #ffffff;
+}
+
+#fork {
+	z-index: 100;
+	position: fixed;
+	top: 40px;
+	right: 0;
+	display: block;
+	height: 149px;
+	width: 149px;
+	background: transparent url('fork.png') center center no-repeat;
+	text-decoration: none;
+}
+
+#fork span {
+	position: absolute;
+	top: -1000px;
+}
+
+section div {
+	padding: 10px 20px;
+	background: #ffffff;
+	border-radius: 10px;
+	border: solid 1px #bcd7f9;
+}
+
+section div + div {
+	margin-top: 20px;
+}
+
+footer {
+	margin-top: 16px;
+}
+
+footer p {
+	margin: 0;
+	padding: 0;
+	font-style: italic;
+	text-align: center;
+}
+
+footer p small {
+	font-size: 13px;
+	color: #444444;
+}
+
+@media (max-width: 670px) {
+	body {
+		padding-top: 80px;
+	}
+	nav {
+		height: 80px;
+	}
+	#fork {
+		display: none;
+	}
+}

@@ -1,0 +1,11 @@
+
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^www\.(.+)$
+RewriteRule ^(.*)$ http://%1$1 [R=301,NE,L]
+RewriteRule ^favicon\.ico$ /resources/favicon.ico [L]
+RewriteRule ^version\.txt$ http://pear.apigen.org/rest/r/apigen/latest.txt [R=301,NE,L]
+
+<FilesMatch "\.(phar)$">
+  ForceType application/octet-stream
+  Header set Content-Disposition attachment
+</FilesMatch>
