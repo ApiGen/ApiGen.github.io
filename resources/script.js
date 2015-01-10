@@ -98,3 +98,6 @@ $(function() {
 		checkHash();
 	}
 });
+
+
+$('body').scrollspy({ target: '.navbar-inverse' });
