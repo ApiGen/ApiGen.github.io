@@ -1,7 +1,7 @@
 // scrollspy
-var offset = 130;
+var offset = 50;
 
-$('.navbar li a').click(function(event) {
+$('.navbar li a.scroll').click(function(event) {
 	event.preventDefault();
 	$($(this).attr('href'))[0].scrollIntoView();
 	scrollBy(0, -offset);
