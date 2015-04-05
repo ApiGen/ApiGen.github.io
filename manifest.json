@@ -1,8 +1,8 @@
 [
 	{
 		"name": "apigen.phar",
-		"sha1": "ead4ed827ec3635ffbe0e74b0f4c7e2574524416",
-		"url": "https://github.com/apigen/apigen/releases/download/v4.0.0/apigen-4.0.0.phar",
-		"version": "4.0.0"
+		"sha1": "364ada542f76b967c6a824d047edf43f20c8003f",
+		"url": "https://github.com/apigen/apigen/releases/download/v4.1.0/apigen-4.1.0.phar",
+		"version": "4.1.0"
 	}
 ]
