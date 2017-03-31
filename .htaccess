@@ -1,9 +1,0 @@
-RewriteEngine On
-RewriteCond %{HTTP_HOST} ^www\.(.+)$
-RewriteRule ^(.*)$ http://%1$1 [R=301,NE,L]
-RewriteRule ^favicon\.ico$ /resources/favicon.ico [L]
-
-<FilesMatch "\.(phar)$">
-  ForceType application/octet-stream
-  Header set Content-Disposition attachment
-</FilesMatch>
